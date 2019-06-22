@@ -1,1 +1,14 @@
 // Mixins Here
+.imgradu{
+  border-radius: 2rem;
+}
+.flex{
+  display: flex;
+}
+.btn-mixin(@bRad: 1rem, @fSize: 1.5rem, @width: 30%, @bgc: @ebony-clay, @tcolor: white){
+border-radius: @bRad;
+font-size: @fSize;
+width: @width;
+background-color: @bgc;
+color: @tcolor;
+}

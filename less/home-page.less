@@ -7,6 +7,10 @@
     img{
       // mixin 1
       .imgradu();
+
+      @media @phone{
+        width: 100%;
+      }
     }
 
     h2 {
@@ -31,6 +35,20 @@
       .imgradu();
       height: 100%;
     }
+
+
+    @media @phone{
+      .sky{
+        display: none;
+      }
+      .launch{
+        display: none;
+      }
+      .blast{
+      width: 85%;
+      margin: auto;
+      }
+    }
   }
 
   .visit-planets {
@@ -52,8 +70,21 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      padding: 2rem 0;
+      .flex();
+      flex-direction: column-reverse;
+      align-items: center;
+
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        width: 85%;
+
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -67,6 +98,12 @@
         button{
         .btn-mixin();
         font-size: 2rem;
+
+        @media @phone{
+          width: 100%;
+          height: 6rem;
+          border-radius: .5rem;
+        }
       }
     }
     button:hover{
@@ -77,6 +114,12 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 85%;
+        margin-left: 0;
+
+      }
 
       img {
         width: 100%;

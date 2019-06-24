@@ -1,1 +1,43 @@
 // Navigation code here
+
+.navBox {
+  // Mixin 2
+  .flex();
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    animation-name: headcolor;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+
+  .abox {
+    // Mixin 2
+    .flex();
+    justify-content: center;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  nav {
+    width: 40%;
+    // Mixin 2
+    .flex();
+    justify-content: space-around;
+    @media @phone {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: @shuttle-gray;
+      font-size: 1.2rem;
+    }
+  }
+}
